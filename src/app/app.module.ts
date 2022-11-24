@@ -7,10 +7,12 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BooksentryComponent } from './booksentry/booksentry.component';
 import { BookSearchComponent } from './book-search/book-search.component';
+import { BookDeleteComponent } from './book-delete/book-delete.component';
 
 const myRoute:Routes = [{path:"",component:AdminLoginComponent},
                         {path:"entry",component:BooksentryComponent},
                         {path:"search",component:BookSearchComponent},
+                        {path:"delete",component:BookDeleteComponent},
                        ]
 
 @NgModule({
@@ -18,7 +20,8 @@ const myRoute:Routes = [{path:"",component:AdminLoginComponent},
     AppComponent,
     AdminLoginComponent,
     BooksentryComponent,
-    BookSearchComponent
+    BookSearchComponent,
+    BookDeleteComponent
   ],
   imports: [
     BrowserModule,
