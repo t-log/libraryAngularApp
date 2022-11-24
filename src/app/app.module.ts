@@ -9,12 +9,14 @@ import { BooksentryComponent } from './booksentry/booksentry.component';
 import { BookSearchComponent } from './book-search/book-search.component';
 import { BookDeleteComponent } from './book-delete/book-delete.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
+import { IssueBookComponent } from './issue-book/issue-book.component';
 
 const myRoute:Routes = [{path:"",component:AdminLoginComponent},
                         {path:"entry",component:BooksentryComponent},
                         {path:"search",component:BookSearchComponent},
                         {path:"delete",component:BookDeleteComponent},
                         {path:"edit",component:EditBookComponent},
+                        {path:"issue",component:IssueBookComponent},
                        ]
 
 @NgModule({
@@ -24,7 +26,8 @@ const myRoute:Routes = [{path:"",component:AdminLoginComponent},
     BooksentryComponent,
     BookSearchComponent,
     BookDeleteComponent,
-    EditBookComponent
+    EditBookComponent,
+    IssueBookComponent
   ],
   imports: [
     BrowserModule,
