@@ -10,6 +10,7 @@ import { BookSearchComponent } from './book-search/book-search.component';
 import { BookDeleteComponent } from './book-delete/book-delete.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
 import { IssueBookComponent } from './issue-book/issue-book.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes = [{path:"",component:AdminLoginComponent},
                         {path:"entry",component:BooksentryComponent},
@@ -27,7 +28,8 @@ const myRoute:Routes = [{path:"",component:AdminLoginComponent},
     BookSearchComponent,
     BookDeleteComponent,
     EditBookComponent,
-    IssueBookComponent
+    IssueBookComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
