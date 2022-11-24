@@ -11,6 +11,7 @@ import { BookDeleteComponent } from './book-delete/book-delete.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
 import { IssueBookComponent } from './issue-book/issue-book.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ViewBooksComponent } from './view-books/view-books.component';
 
 const myRoute:Routes = [{path:"",component:AdminLoginComponent},
                         {path:"entry",component:BooksentryComponent},
@@ -18,6 +19,7 @@ const myRoute:Routes = [{path:"",component:AdminLoginComponent},
                         {path:"delete",component:BookDeleteComponent},
                         {path:"edit",component:EditBookComponent},
                         {path:"issue",component:IssueBookComponent},
+                        {path:"view",component:ViewBooksComponent},
                        ]
 
 @NgModule({
@@ -29,7 +31,8 @@ const myRoute:Routes = [{path:"",component:AdminLoginComponent},
     BookDeleteComponent,
     EditBookComponent,
     IssueBookComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewBooksComponent
   ],
   imports: [
     BrowserModule,
