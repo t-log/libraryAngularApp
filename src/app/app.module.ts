@@ -6,17 +6,19 @@ import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BooksentryComponent } from './booksentry/booksentry.component';
+import { BookSearchComponent } from './book-search/book-search.component';
 
 const myRoute:Routes = [{path:"",component:AdminLoginComponent},
                         {path:"entry",component:BooksentryComponent},
-
+                        {path:"search",component:BookSearchComponent},
                        ]
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminLoginComponent,
-    BooksentryComponent
+    BooksentryComponent,
+    BookSearchComponent
   ],
   imports: [
     BrowserModule,
