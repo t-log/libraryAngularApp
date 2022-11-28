@@ -12,6 +12,7 @@ import { EditBookComponent } from './edit-book/edit-book.component';
 import { IssueBookComponent } from './issue-book/issue-book.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ViewBooksComponent } from './view-books/view-books.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute:Routes = [{path:"",component:AdminLoginComponent},
                         {path:"entry",component:BooksentryComponent},
@@ -38,7 +39,8 @@ const myRoute:Routes = [{path:"",component:AdminLoginComponent},
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
